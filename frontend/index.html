@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>👨‍💼 Employee Management</h1>
+
+    <div class="form-section">
+      <h2>Add / Update Employee</h2>
+      <form id="employeeForm">
+        <input type="text" id="empId" placeholder="Employee ID" required>
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="position" placeholder="Position" required>
+        <input type="number" id="salary" placeholder="Salary" required>
+        <button type="submit" class="btn-save">💾 Save Employee</button>
+      </form>
+    </div>
+
+    <h2>Employee Directory</h2>
+    <div id="employeeList" class="employee-list"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
